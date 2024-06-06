@@ -1,6 +1,17 @@
-button{
-    width: 100%;
+button {
+  width: 100%;
+  transition: all 0.3s;
 }
-label{
-    font-weight: 700;
+
+button:hover {
+  scale: 1.02;
+}
+label {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+span {
+  font-weight: 700;
+  font-size: 1rem;
 }
