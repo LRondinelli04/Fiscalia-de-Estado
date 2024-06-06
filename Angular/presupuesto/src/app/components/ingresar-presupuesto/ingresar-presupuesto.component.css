@@ -12,3 +12,7 @@ button {
 button:hover {
   scale: 1.02;
 }
+
+.textError {
+  font-size: 1rem;
+}
