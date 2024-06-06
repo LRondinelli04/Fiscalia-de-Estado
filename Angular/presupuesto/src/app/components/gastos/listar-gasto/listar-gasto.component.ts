@@ -18,7 +18,7 @@ export class ListarGastoComponent {
     //Inicializar variables
     this.presupuesto = 0;
     this.restante = 0;
-    
+
     //Obtener gasto
     this.subscription = this._presupuestoService
       .getGasto()
@@ -39,5 +39,19 @@ export class ListarGastoComponent {
   //Cuando el componente se destruye se debe de cancelar la subscripción
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  colorRestante() {
+    // Definir el color del restante
+    if (this.presupuesto / 4 > this.restante) {
+      //Si el restante es menor al 25% del presupuesto
+      return 'alert alert-danger';
+    } else if (this.presupuesto / 2 > this.restante) {
+      //Si el restante es menor al 50% del presupuesto
+      return 'alert alert-warning';
+    } else {
+      //Si el restante es mayor al 50% del presupuesto
+      return 'alert alert-success';
+    }
   }
 }
