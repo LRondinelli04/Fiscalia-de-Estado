@@ -1,10 +1,43 @@
 import { Component } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { PresupuestoService } from 'src/app/services/presupuesto.service';
 
 @Component({
   selector: 'app-listar-gasto',
   templateUrl: './listar-gasto.component.html',
-  styleUrls: ['./listar-gasto.component.css']
+  styleUrls: ['./listar-gasto.component.css'],
 })
 export class ListarGastoComponent {
+  // Variables
+  subscription: Subscription;
+  presupuesto: number;
+  restante: number;
+  listGastos: any[] = []; //Arreglo de gastos
 
+  constructor(private _presupuestoService: PresupuestoService) {
+    //Inicializar variables
+    this.presupuesto = 0;
+    this.restante = 0;
+    
+    //Obtener gasto
+    this.subscription = this._presupuestoService
+      .getGasto()
+      .subscribe((data) => {
+        //Agregar gasto al arreglo
+        this.listGastos.push(data);
+        //Restar al restante el gasto
+        this.restante = this.restante - data.cantidad;
+      });
+  }
+
+  ngOnInit(): void {
+    //Obtener presupuesto y restante que se encuentran en el servicio
+    this.presupuesto = this._presupuestoService.presupuesto;
+    this.restante = this._presupuestoService.restante;
+  }
+
+  //Cuando el componente se destruye se debe de cancelar la subscripción
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 }
