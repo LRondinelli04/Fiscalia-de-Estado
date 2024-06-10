@@ -24,5 +24,14 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatSnackBarModule,
     MatProgressSpinnerModule
   ],
+  exports: [
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
+  ],
 })
 export class SharedModule {}
