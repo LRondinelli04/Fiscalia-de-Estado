@@ -8,9 +8,10 @@ import { SharedModule } from './components/shared/shared.module';
 
 // Components
 import { LoginComponent } from './components/login/login.component';
+import { NavbarComponent } from './componentes/dashboard/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
