@@ -1,1 +1,25 @@
-<p>navbar works!</p>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
+
+<mat-toolbar color="primary">
+  <span>AppUsers</span>
+
+  <span class="example-spacer"></span>
+
+  <button class="button" mat-button routerLink="/dashboard">Dashboard</button>
+  <button class="button" mat-button routerLink="/dashboard/usuarios">Usuarios</button>
+  <button class="button" mat-button routerLink="/dashboard/reportes">Reportes</button>
+
+  <span class="example-spacer"></span>
+
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    routerLink="/login"
+  >
+    <span class="material-symbols-outlined"> logout </span>
+  </button>
+</mat-toolbar>
