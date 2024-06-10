@@ -8,9 +8,14 @@
 
   <span class="example-spacer"></span>
 
-  <button class="button" mat-button routerLink="/dashboard">Dashboard</button>
-  <button class="button" mat-button routerLink="/dashboard/usuarios">Usuarios</button>
-  <button class="button" mat-button routerLink="/dashboard/reportes">Reportes</button>
+  <button
+    class="button"
+    mat-button
+    *ngFor="let item of menu"
+    [routerLink]="item.redirect"
+  >
+    {{ item.nombre }}
+  </button>
 
   <span class="example-spacer"></span>
 
