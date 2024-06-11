@@ -1,0 +1,12 @@
+components
+    agregar-editar-mascota
+    listado-mascotas
+    ver-mascota
+
+interfaces
+    mascota
+
+services
+    mascota
+
+shared
