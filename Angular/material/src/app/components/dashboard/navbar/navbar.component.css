@@ -1,16 +1,12 @@
-.example-spacer {
-  flex: 1 1 auto;
+
+
+.button {
+  transition: all 0.3s ease;
+  margin: 0 5px;
 }
 
-.button{
-    transition: all 0.3s ease;
-    margin: 0 5px ;
+.button:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  scale: 1.1;
 }
-
-.button:hover{
-    background-color: #f1f1f1;
-    color: #000;
-    scale: 1.1;
-}
-
-

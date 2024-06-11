@@ -4,6 +4,7 @@ import { Usuario } from 'src/app/interfaces/usuario';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { UsuarioService } from 'src/app/services/usuario.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export interface PeriodicElement {
   name: string;
@@ -29,7 +30,10 @@ export class UsuariosComponent {
   listUsuario: Usuario[] = [];
   dataSource!: MatTableDataSource<any>;
 
-  constructor(private usuarioService: UsuarioService) {}
+  constructor(
+    private usuarioService: UsuarioService,
+    private _snackBar: MatSnackBar
+  ) {}
 
   ngOnInit() {
     this.cargarUsuarios();
@@ -60,5 +64,12 @@ export class UsuariosComponent {
   eliminarUsuario(id: number) {
     this.usuarioService.deleteUsuario(id);
     this.cargarUsuarios();
+
+    // Mensaje de eliminacion
+    this._snackBar.open('El usuario fue eliminado correctamente', '', {
+      duration: 1500,
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+    });
   }
 }

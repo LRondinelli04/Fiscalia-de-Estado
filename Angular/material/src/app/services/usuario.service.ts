@@ -95,4 +95,10 @@ export class UsuarioService {
     // El segundo elememto indica cuantos elementos se eliminaran a partir del indice indicado
     this.listUsuario.splice(index, 1);
   }
+
+  // Agregar Usuario
+  agregarUsuario(usuario: Usuario) {
+    // El metodo unshift agrega un elemento al inicio de un array
+    this.listUsuario.unshift(usuario);
+  }
 }
