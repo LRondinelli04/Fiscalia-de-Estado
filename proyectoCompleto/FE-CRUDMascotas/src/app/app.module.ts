@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { AgregarEditarMascotaComponent } from './components/agregar-editar-mascota/agregar-editar-mascota.component';
 import { ListadoMascotasComponent } from './components/listado-mascotas/listado-mascotas.component';
 import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Angular Material
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +21,9 @@ import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
