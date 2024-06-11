@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material
 import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import {MatTableModule} from '@angular/material/table';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
