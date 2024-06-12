@@ -2,6 +2,8 @@
   <h1>listado de mascotas</h1>
 </div>
 
+<app-spinner *ngIf="loading == true"></app-spinner>
+
 <div class="container">
   <mat-form-field style="width: 100%">
     <mat-label>Filter</mat-label>
@@ -73,6 +75,7 @@
           matTooltip="Editar"
         ></mat-icon>
         <mat-icon
+          (click)="eliminarMascota(element.id)"
           class="icon delete"
           fontIcon="delete"
           matTooltip="Eliminar"
