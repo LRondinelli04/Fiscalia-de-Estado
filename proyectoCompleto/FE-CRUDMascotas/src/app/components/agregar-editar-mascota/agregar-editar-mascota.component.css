@@ -12,6 +12,10 @@ mat-form-field {
   margin-top: 20px;
 }
 
+mat-card-subtitle{
+  padding: 5px;
+}
+
 button{
     margin: 0 10px;
 }

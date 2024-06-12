@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// Modulos
+import { ReactiveFormsModule } from '@angular/forms';
+
 // Angular Material
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -34,6 +37,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatSnackBarModule,
     MatProgressBarModule,
     MatGridListModule,
+    ReactiveFormsModule,
   ],
   exports: [
     MatTableModule,
@@ -49,6 +53,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     SpinnerComponent,
     MatProgressBarModule,
     MatGridListModule,
+    ReactiveFormsModule,
   ],
 })
 export class SharedModule {}

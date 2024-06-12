@@ -5,40 +5,42 @@
 
 <div class="container">
   <mat-card>
-    <mat-card-subtitle> datos de la mascota </mat-card-subtitle>
+    <mat-card-subtitle> Datos de la mascota </mat-card-subtitle>
   </mat-card>
-  <mat-grid-list cols="2" rowHeight="80px">
-    <mat-grid-tile [colspan]="2">
-      <mat-form-field appearance="outline">
-        <mat-label>Nombre</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </mat-grid-tile>
-    <mat-grid-tile
-      ><mat-form-field appearance="outline">
-        <mat-label>Raza</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </mat-grid-tile>
-    <mat-grid-tile
-      ><mat-form-field appearance="outline">
-        <mat-label>Color</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </mat-grid-tile>
-    <mat-grid-tile
-      ><mat-form-field appearance="outline">
-        <mat-label>Edad</mat-label>
-        <input matInput /> </mat-form-field
-    ></mat-grid-tile>
-    <mat-grid-tile
-      ><mat-form-field appearance="outline">
-        <mat-label>Peso</mat-label>
-        <input matInput /> </mat-form-field
-    ></mat-grid-tile>
-    <mat-grid-tile [colspan]="2">
+  <form [formGroup]="form" (ngSubmit)="agregarMascota()">
+    <mat-grid-list cols="2" rowHeight="80px">
+      <mat-grid-tile [colspan]="2">
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="nombre" />
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile
+        ><mat-form-field appearance="outline">
+          <mat-label>Raza</mat-label>
+          <input matInput formControlName="raza"/>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile
+        ><mat-form-field appearance="outline">
+          <mat-label>Color</mat-label>
+          <input matInput formControlName="color"/>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile
+        ><mat-form-field appearance="outline">
+          <mat-label>Edad</mat-label>
+          <input matInput formControlName="edad" type="number"/> </mat-form-field
+      ></mat-grid-tile>
+      <mat-grid-tile
+        ><mat-form-field appearance="outline">
+          <mat-label>Peso Kg</mat-label>
+          <input matInput formControlName="peso" type="number"/> </mat-form-field
+      ></mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
         <button mat-raised-button routerLink="/listadoMascotas">Volver</button>
-        <button mat-raised-button color="primary">Aceptar</button>
-    </mat-grid-tile>
-  </mat-grid-list>
+        <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Aceptar</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
 </div>
