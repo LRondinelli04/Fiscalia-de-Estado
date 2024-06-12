@@ -8,16 +8,8 @@ import { ListadoMascotasComponent } from './components/listado-mascotas/listado-
 import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Angular Material
-import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatSortModule} from '@angular/material/sort';
-
-
-
-
+// Import de SharedModule
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -25,19 +17,15 @@ import {MatSortModule} from '@angular/material/sort';
     AppComponent,
     AgregarEditarMascotaComponent,
     ListadoMascotasComponent,
-    VerMascotaComponent
+    VerMascotaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSortModule
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

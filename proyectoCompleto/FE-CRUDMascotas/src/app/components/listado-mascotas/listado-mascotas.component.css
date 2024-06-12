@@ -6,8 +6,31 @@
   color: white;
 }
 
-.container{
+.container {
   margin: 50px 20%;
   box-shadow: 5px 5px 5px 5px #888888;
   border-radius: 8px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.icon:hover {
+  scale: 1.2;
+}
+
+.delete {
+  color: #e15639;
+}
+
+.edit {
+  color: #187880;
+}
+
+.agregar {
+  font-size: 10px;
+  line-height: 20px;
 }

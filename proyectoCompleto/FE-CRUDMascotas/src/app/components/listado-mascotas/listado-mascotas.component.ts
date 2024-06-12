@@ -54,6 +54,7 @@ export class ListadoMascotasComponent implements OnInit, AfterViewInit {
     'raza',
     'color',
     'peso',
+    'acciones',
   ];
   dataSource = new MatTableDataSource<Mascota>(listaMascotas);
 
