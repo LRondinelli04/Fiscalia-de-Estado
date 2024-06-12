@@ -49,11 +49,11 @@ const listaMascotas: Mascota[] = [
 })
 export class ListadoMascotasComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = [
-    'demo-nombre',
-    'demo-edad',
-    'demo-raza',
-    'demo-color',
-    'demo-peso',
+    'nombre',
+    'edad',
+    'raza',
+    'color',
+    'peso',
   ];
   dataSource = new MatTableDataSource<Mascota>(listaMascotas);
 
