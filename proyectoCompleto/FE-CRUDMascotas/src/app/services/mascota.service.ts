@@ -14,7 +14,13 @@ export class MascotaService {
 
   constructor(private http: HttpClient) {}
 
+  // Devuelve un arreglo de Mascotas
   getMascotas(): Observable<Mascota[]> {
     return this.http.get<Mascota[]>(`${this.MyAppUrl}${this.MyApiUrl}`);
+  }
+
+  // Devuelve 1 solo objeto de Mascota
+  getMascota(id: number): Observable<Mascota> {
+    return this.http.get<Mascota>(`${this.MyAppUrl}${this.MyApiUrl}${id}`);
   }
 }
