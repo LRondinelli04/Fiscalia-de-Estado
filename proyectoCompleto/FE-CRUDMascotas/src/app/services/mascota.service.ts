@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Mascota } from '../interfaces/mascota';
 
 @Injectable({
   providedIn: 'root',
@@ -13,7 +14,7 @@ export class MascotaService {
 
   constructor(private http: HttpClient) {}
 
-  getMascotas(): Observable<any> {
-    return this.http.get(`${this.MyAppUrl}${this.MyApiUrl}`);
+  getMascotas(): Observable<Mascota[]> {
+    return this.http.get<Mascota[]>(`${this.MyAppUrl}${this.MyApiUrl}`);
   }
 }
