@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // Modulos
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 // Angular Material
 import { MatTableModule } from '@angular/material/table';
@@ -38,6 +39,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatProgressBarModule,
     MatGridListModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   exports: [
     MatTableModule,
@@ -54,6 +56,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatProgressBarModule,
     MatGridListModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 })
 export class SharedModule {}
