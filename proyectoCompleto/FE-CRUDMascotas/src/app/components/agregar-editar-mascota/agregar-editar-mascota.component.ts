@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { Mascota } from 'src/app/interfaces/mascota';
+import { MascotaService } from 'src/app/services/mascota.service';
 
 @Component({
   selector: 'app-agregar-editar-mascota',
@@ -12,7 +15,12 @@ export class AgregarEditarMascotaComponent {
   loading: boolean = false;
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private _mascotaService: MascotaService,
+    private _snackBar: MatSnackBar,
+    private router: Router
+  ) {
     this.form = this.fb.group({
       nombre: ['', Validators.required], // Validators.required es para que el campo sea obligatorio
       raza: ['', Validators.required],
@@ -34,7 +42,18 @@ export class AgregarEditarMascotaComponent {
       peso: this.form.get('peso')?.value,
     };
 
-    // Muestro los datos en consola
-    console.log(mascota);
+    // Enviamos objeto al backend
+    this._mascotaService.addMascota(mascota).subscribe((data) => {
+      // Mostramos mensaje de confirmación
+      this.mensajeExito();
+      this.router.navigate(['/listadoMascotas']);
+    });
+  }
+
+  // Mensaje de exito
+  mensajeExito() {
+    this._snackBar.open('La mascota fue registrada correctamente', '', {
+      duration: 1500,
+    });
   }
 }
