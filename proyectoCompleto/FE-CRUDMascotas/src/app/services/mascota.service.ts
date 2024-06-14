@@ -33,4 +33,12 @@ export class MascotaService {
   addMascota(mascota: Mascota): Observable<Mascota> {
     return this.http.post<Mascota>(`${this.MyAppUrl}${this.MyApiUrl}`, mascota);
   }
+
+  // Actualizar mascota
+  updateMascota(id: number, mascota: Mascota): Observable<void> {
+    return this.http.put<void>(
+      `${this.MyAppUrl}${this.MyApiUrl}${id}`,
+      mascota
+    );
+  }
 }

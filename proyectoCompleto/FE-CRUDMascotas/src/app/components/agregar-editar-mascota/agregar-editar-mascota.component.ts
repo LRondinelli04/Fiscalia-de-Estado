@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Mascota } from 'src/app/interfaces/mascota';
 import { MascotaService } from 'src/app/services/mascota.service';
 
@@ -14,12 +14,16 @@ export class AgregarEditarMascotaComponent {
   // Variables
   loading: boolean = false;
   form: FormGroup;
+  id: number;
+
+  operacion: string = 'Agregar';
 
   constructor(
     private fb: FormBuilder,
     private _mascotaService: MascotaService,
     private _snackBar: MatSnackBar,
-    private router: Router
+    private router: Router,
+    private aRouter: ActivatedRoute
   ) {
     this.form = this.fb.group({
       nombre: ['', Validators.required], // Validators.required es para que el campo sea obligatorio
@@ -28,11 +32,32 @@ export class AgregarEditarMascotaComponent {
       edad: ['', Validators.required],
       peso: ['', Validators.required],
     });
+
+    // Obtengo el id de la mascota y lo transformo en un INT
+    this.id = Number(this.aRouter.snapshot.paramMap.get('id'));
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.id !== 0) {
+      this.operacion = 'Editar';
+      this.obtenerMascota(this.id);
+    }
+  }
 
-  agregarMascota() {
+  obtenerMascota(id: number) {
+    this._mascotaService.getMascota(id).subscribe((data) => {
+      // Seteo los valores del formulario con los datos de la mascota para poder editarlos
+      this.form.setValue({
+        nombre: data.nombre,
+        raza: data.raza,
+        color: data.color,
+        edad: data.edad,
+        peso: data.peso,
+      });
+    });
+  }
+
+  agregarEditarMascota() {
     // Guardo los datos del formulario en la variable mascota
     const mascota: Mascota = {
       nombre: this.form.get('nombre')?.value,
@@ -42,17 +67,49 @@ export class AgregarEditarMascotaComponent {
       peso: this.form.get('peso')?.value,
     };
 
-    // Enviamos objeto al backend
-    this._mascotaService.addMascota(mascota).subscribe((data) => {
-      // Mostramos mensaje de confirmación
-      this.mensajeExito();
-      this.router.navigate(['/listadoMascotas']);
-    });
+    if (this.id != 0) {
+      mascota.id = this.id; // le asigno el id a la mascota para poder editarla
+      this.editarMascota(this.id, mascota);
+    } else {
+      this.agregarMascota(mascota);
+    }
   }
 
+  editarMascota(id: number, mascota: Mascota) {
+    this.loading = true;
+    this._mascotaService.updateMascota(id, mascota).subscribe(
+      () => {
+        this.loading = false;
+        this.mensajeExito('editada');
+        this.router.navigate(['/listadoMascotas']);
+      },
+      (error) => {
+        this.loading = false;
+        this._snackBar.open('Error al editar la mascota', '', {
+          duration: 1500,
+        });
+      }
+    );
+  }
+
+  agregarMascota(mascota: Mascota) {
+    // Enviamos objeto al backend
+    this._mascotaService.addMascota(mascota).subscribe(
+      (data) => {
+        // Mostramos mensaje de confirmación
+        this.mensajeExito('registrada');
+        this.router.navigate(['/listadoMascotas']);
+      },
+      (error) => {
+        this._snackBar.open('Error al agregar la mascota', '', {
+          duration: 1500,
+        });
+      }
+    );
+  }
   // Mensaje de exito
-  mensajeExito() {
-    this._snackBar.open('La mascota fue registrada correctamente', '', {
+  mensajeExito(texto: string) {
+    this._snackBar.open(`La Mascota fue ${texto} con exito`, '', {
       duration: 1500,
     });
   }
