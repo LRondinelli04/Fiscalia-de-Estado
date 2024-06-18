@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\",
+  "WorkspaceRootPath": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|c:\\users\\lrondinelli\\desktop\\be-crudmascotas\\be-crudmascotas\\controllers\\mascotacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|solutionrelative:be-crudmascotas\\controllers\\mascotacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Controllers\\MascotaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BE-CRUDMascotas\\Controllers\\MascotaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|c:\\users\\lrondinelli\\desktop\\be-crudmascotas\\be-crudmascotas\\models\\repository\\mascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|solutionrelative:be-crudmascotas\\models\\repository\\mascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|c:\\users\\lrondinelli\\desktop\\be-crudmascotas\\be-crudmascotas\\models\\repository\\imascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|solutionrelative:be-crudmascotas\\models\\repository\\imascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|c:\\users\\lrondinelli\\desktop\\be-crudmascotas\\be-crudmascotas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|solutionrelative:be-crudmascotas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BE-CRUDMascotas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|c:\\users\\lrondinelli\\desktop\\be-crudmascotas\\be-crudmascotas\\models\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6AB5C0E-50E4-4D43-B5AE-27677545AE61}|BE-CRUDMascotas\\BE-CRUDMascotas.csproj|solutionrelative:be-crudmascotas\\models\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\AplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BE-CRUDMascotas\\Models\\AplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,37 +36,35 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MascotaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs",
               "RelativeDocumentMoniker": "BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs",
-              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs",
+              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs",
               "RelativeToolTip": "BE-CRUDMascotas\\Models\\Repository\\MascotaRepository.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAcwDsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T15:21:50.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T15:21:50.247Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "IMascotaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs",
               "RelativeDocumentMoniker": "BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs",
-              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs",
+              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs",
               "RelativeToolTip": "BE-CRUDMascotas\\Models\\Repository\\IMascotaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T15:21:25.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T15:21:25.812Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MascotaController.cs",
-              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Controllers\\MascotaController.cs",
+              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Controllers\\MascotaController.cs",
               "RelativeDocumentMoniker": "BE-CRUDMascotas\\Controllers\\MascotaController.cs",
-              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Controllers\\MascotaController.cs",
+              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Controllers\\MascotaController.cs",
               "RelativeToolTip": "BE-CRUDMascotas\\Controllers\\MascotaController.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAcwI4AAAAmAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwI4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T14:03:54.903Z",
               "EditorCaption": ""
@@ -75,27 +73,25 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Program.cs",
               "RelativeDocumentMoniker": "BE-CRUDMascotas\\Program.cs",
-              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Program.cs",
+              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Program.cs",
               "RelativeToolTip": "BE-CRUDMascotas\\Program.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAAAB8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T13:37:09.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T13:37:09.183Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
               "RelativeDocumentMoniker": "BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
               "RelativeToolTip": "BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T13:34:25.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T13:34:25.798Z"
             }
           ]
         }
