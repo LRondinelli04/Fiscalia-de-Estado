@@ -13,15 +13,6 @@ img {
   cursor: pointer;
 }
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.buttons button {
-  width: 45%;
-}
-
 table i {
   transition: all 0.3s ease;
 }
@@ -29,4 +20,11 @@ table i {
 table i:hover {
   scale: 1.2;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.green-icon {
+  color: #198754;
+}
+.red-icon {
+  color: #dc3545;
 }
