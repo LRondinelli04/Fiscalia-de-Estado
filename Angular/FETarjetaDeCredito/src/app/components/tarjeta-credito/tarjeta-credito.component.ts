@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-tarjeta-credito',
@@ -8,30 +9,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class TarjetaCreditoComponent {
   // Variables
-  listTarjetas: any[] = [
-    {
-      titular: 'Juan Perez',
-      numeroTarjeta: '1234 1234 1234 1234',
-      fechaExpiracion: '01/23',
-      cvv: '123',
-    },
-    {
-      titular: 'Maria Rodriguez',
-      numeroTarjeta: '5678 567 5678 5678',
-      fechaExpiracion: '01/23',
-      cvv: '123',
-    },
-    {
-      titular: 'Pedro Gomez',
-      numeroTarjeta: '9876 9876 9876 9876',
-      fechaExpiracion: '01/23',
-      cvv: '123',
-    },
-  ];
+  listTarjetas: any[] = [];
 
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private toastr: ToastrService) {
     this.form = this.fb.group({
       titular: ['', Validators.required],
       numeroTarjeta: [
@@ -66,8 +48,20 @@ export class TarjetaCreditoComponent {
 
     // Agrego la tarjeta a la lista de tarjetas
     this.listTarjetas.push(tarjeta);
+    this.toastr.success(
+      'Se registro correctamente la tarjeta',
+      'Tarjeta Registrada'
+    );
 
     // Reseteo el formulario
     this.form.reset();
+  }
+
+  eliminarTarjeta(index: number) {
+    this.listTarjetas.splice(index, 1);
+    this.toastr.error(
+      'Se elimino correctamente la tarjeta',
+      'Tarjeta Eliminada'
+    );
   }
 }
