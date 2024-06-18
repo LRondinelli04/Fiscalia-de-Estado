@@ -15,6 +15,74 @@
         <div class="card-body">
           <h6 class="titulo text-uppercase text-center">Agregar Tarjeta</h6>
           <hr />
+
+          <form>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-user"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Titular"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-credit-card"></i
+              ></span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Numero de Tarjeta"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <input
+                    id="fechaExpiracion"
+                    formControlName="fechaExpiracion"
+                    maxlength="5"
+                    type="text"
+                    class="form-control"
+                    placeholder="MM/YY"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text">
+                    <i class="fas fa-key"></i>
+                  </span>
+                  <input
+                    formControlName="cvv"
+                    maxlength="3"
+                    type="number"
+                    class="form-control"
+                    placeholder="CVV"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-success btn-lg">
+                <i class="fa-solid fa-database"></i> Agregar
+              </button>
+              <button type="reset" class="btn btn-danger btn-lg">
+                <i class="fa-solid fa-delete-left"></i> Borrar
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
