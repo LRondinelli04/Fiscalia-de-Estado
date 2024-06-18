@@ -1,0 +1,10 @@
+img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    max-width: fit-content;
+}
+
+.far{
+    cursor: pointer;
+}
