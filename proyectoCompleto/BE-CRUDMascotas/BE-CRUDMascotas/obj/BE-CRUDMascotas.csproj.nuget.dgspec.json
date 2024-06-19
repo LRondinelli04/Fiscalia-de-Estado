@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj": {}
+    "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj": {
+    "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
+        "projectUniqueName": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
         "projectName": "BE-CRUDMascotas",
-        "projectPath": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
+        "projectPath": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
         "packagesPath": "C:\\Users\\lrondinelli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\obj\\",
+        "outputPath": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lrondinelli\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DEVTNSo6SOo=",
+  "dgSpecHash": "yS3WoDaKB34=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lrondinelli\\Desktop\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
+  "projectFilePath": "C:\\Users\\lrondinelli\\Desktop\\LRondinelli\\Fiscalia-de-Estado\\proyectoCompleto\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lrondinelli\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\lrondinelli\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
