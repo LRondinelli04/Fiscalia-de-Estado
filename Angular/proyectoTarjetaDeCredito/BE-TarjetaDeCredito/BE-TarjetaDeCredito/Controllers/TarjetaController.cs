@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +9,30 @@ namespace BE_TarjetaDeCredito.Controllers
     [ApiController]
     public class TarjetaController : ControllerBase
     {
+
+        private readonly AplicationDbContext _context;
+
+        public TarjetaController(AplicationDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: api/<TarjetaController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                // Get all TarjetaCreditos
+                var listTarjeta = await _context.TarjetaCreditos.ToListAsync();
+
+                // Retorna la lista de tarjetas
+                return Ok(listTarjeta);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // GET api/<TarjetaController>/5
