@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\BE-CRUDMascotas",
-    "\\BE-CRUDMascotas\\Controllers"
+    "\\BE-CRUDMascotas\\Controllers",
+    "\\BE-CRUDMascotas\\Models"
   ],
-  "SelectedNode": "\\BE-CRUDMascotas\\Controllers\\MascotaController.cs",
+  "SelectedNode": "\\BE-CRUDMascotas\\Models\\AplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
