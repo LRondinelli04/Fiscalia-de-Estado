@@ -11,8 +11,9 @@ import { TarjetaService } from 'src/app/services/tarjeta.service';
 export class TarjetaCreditoComponent {
   // Variables
   listTarjetas: any[] = [];
-
+  accion = 'Agregar';
   form: FormGroup;
+  id: number | undefined;
 
   constructor(
     private fb: FormBuilder,
@@ -57,7 +58,7 @@ export class TarjetaCreditoComponent {
     );
   }
 
-  agregarTarjeta() {
+  guardarTarjeta() {
     // Guardo los valores ingresados en el formulario en la constante tarjeta
     const tarjeta: any = {
       titular: this.form.value.titular,
@@ -66,24 +67,44 @@ export class TarjetaCreditoComponent {
       cvv: this.form.value.cvv,
     };
 
-    // Agrego la tarjeta a la lista de tarjetas
-    this._tarjetaService.saveTarjeta(tarjeta).subscribe(
-      (data) => {
-        this.toastr.success(
-          'Se registro correctamente la tarjeta',
-          'Tarjeta Registrada'
-        );
-        this.obtenerTarjetas();
-        this.form.reset();
-      },
-      (error) => {
-        this.toastr.error('Error al registrar la tarjeta', 'Error');
-        console.log(error);
-      }
-    );
+    // Si la accion es agregar
+    if (this.id == undefined) {
+      // Agrego una nueva tarjeta
+      this._tarjetaService.saveTarjeta(tarjeta).subscribe(
+        (data) => {
+          this.toastr.success(
+            'Se registro correctamente la tarjeta',
+            'Tarjeta Registrada'
+          );
+          this.obtenerTarjetas();
+          this.form.reset();
+        },
+        (error) => {
+          this.toastr.error('Error al registrar la tarjeta', 'Error');
+          console.log(error);
+        }
+      );
 
-    // Reseteo el formulario
-    this.form.reset();
+      // Reseteo el formulario
+      this.form.reset();
+    } else {
+      tarjeta.id = this.id;
+      // Edito la tarjeta
+      this._tarjetaService.updateTarjeta(this.id, tarjeta).subscribe(
+        (data) => {
+          this.form.reset();
+          this.accion = 'Agregar';
+          this.id = undefined;
+          this.toastr.info('Se actualizo correctamente la tarjeta', 'Tarjeta Actualizada');
+          // Cargo nuevamente las tartejas
+          this.obtenerTarjetas();
+        },
+        (error) => {
+          this.toastr.error('Error al actualizar la tarjeta', 'Error');
+          console.log(error);
+        }
+      );
+    }
   }
 
   eliminarTarjeta(index: number) {
@@ -99,5 +120,19 @@ export class TarjetaCreditoComponent {
         console.log(error);
       }
     );
+  }
+
+  editarTarjeta(tarjeta: any) {
+    this.accion = 'Editar';
+    // Seteo el id con el id de la tarjeta seleccionada
+    this.id = tarjeta.id;
+
+    // Seteo los valores de la tarjeta seleccionada en el formulario para luego poder editarlo
+    this.form.patchValue({
+      titular: tarjeta.titular,
+      numeroTarjeta: tarjeta.numeroTarjeta,
+      fechaExpiracion: tarjeta.fechaExpiracion,
+      cvv: tarjeta.cvv,
+    });
   }
 }

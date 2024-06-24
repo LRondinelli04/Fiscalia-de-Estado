@@ -23,8 +23,13 @@ export class TarjetaService {
     return this.http.delete(this.myAppUrl + this.myApiUrl + id);
   }
 
-  // Guardar una tarjeta
+  // Agregar una tarjeta
   saveTarjeta(tarjeta: any): Observable<any> {
     return this.http.post(this.myAppUrl + this.myApiUrl, tarjeta);
+  }
+
+  // Editar una tarjeta
+  updateTarjeta(id: number, tarjeta: any): Observable<any> {
+    return this.http.put(this.myAppUrl + this.myApiUrl + id, tarjeta);
   }
 }
