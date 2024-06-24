@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { TarjetaService } from 'src/app/services/tarjeta.service';
 
 @Component({
   selector: 'app-tarjeta-credito',
@@ -13,7 +14,12 @@ export class TarjetaCreditoComponent {
 
   form: FormGroup;
 
-  constructor(private fb: FormBuilder, private toastr: ToastrService) {
+  constructor(
+    private fb: FormBuilder,
+    private toastr: ToastrService,
+    private _tarjetaService: TarjetaService
+  ) {
+    // Validaciones del formulario
     this.form = this.fb.group({
       titular: ['', Validators.required],
       numeroTarjeta: [
@@ -35,7 +41,18 @@ export class TarjetaCreditoComponent {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.obtenerTarjetas();
+  }
+
+  obtenerTarjetas() {
+    this._tarjetaService.getListTarjetas().subscribe( (data) => {
+      console.log(data);
+    }, (error) => {
+      console.log(error);
+    }
+    );
+  }
 
   agregarTarjeta() {
     // Guardo los valores ingresados en el formulario en la constante tarjeta
