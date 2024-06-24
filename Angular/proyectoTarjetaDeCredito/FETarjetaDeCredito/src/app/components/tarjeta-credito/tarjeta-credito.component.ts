@@ -46,11 +46,14 @@ export class TarjetaCreditoComponent {
   }
 
   obtenerTarjetas() {
-    this._tarjetaService.getListTarjetas().subscribe( (data) => {
-      console.log(data);
-    }, (error) => {
-      console.log(error);
-    }
+    this._tarjetaService.getListTarjetas().subscribe(
+      (data) => {
+        console.log(data);
+        this.listTarjetas = data;
+      },
+      (error) => {
+        console.log(error);
+      }
     );
   }
 
@@ -75,10 +78,17 @@ export class TarjetaCreditoComponent {
   }
 
   eliminarTarjeta(index: number) {
-    this.listTarjetas.splice(index, 1);
-    this.toastr.error(
-      'Se elimino correctamente la tarjeta',
-      'Tarjeta Eliminada'
+    this._tarjetaService.deleteTarjeta(index).subscribe(
+      (data) => {
+        this.toastr.error(
+          'Se elimino correctamente la tarjeta',
+          'Tarjeta Eliminada'
+        );
+        this.obtenerTarjetas();
+      },
+      (error) => {
+        console.log(error);
+      }
     );
   }
 }
