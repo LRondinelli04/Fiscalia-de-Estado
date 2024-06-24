@@ -13,11 +13,18 @@ export class TarjetaService {
   constructor(private http: HttpClient) {}
 
   // Metodos
+  // Obtener todas las tarjetas
   getListTarjetas(): Observable<any> {
     return this.http.get(this.myAppUrl + this.myApiUrl);
   }
 
+  // Eliminar una tarjeta
   deleteTarjeta(id: number): Observable<any> {
     return this.http.delete(this.myAppUrl + this.myApiUrl + id);
+  }
+
+  // Guardar una tarjeta
+  saveTarjeta(tarjeta: any): Observable<any> {
+    return this.http.post(this.myAppUrl + this.myApiUrl, tarjeta);
   }
 }

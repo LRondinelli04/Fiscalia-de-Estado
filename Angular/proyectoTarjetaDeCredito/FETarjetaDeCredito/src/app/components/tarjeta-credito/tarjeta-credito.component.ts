@@ -67,10 +67,19 @@ export class TarjetaCreditoComponent {
     };
 
     // Agrego la tarjeta a la lista de tarjetas
-    this.listTarjetas.push(tarjeta);
-    this.toastr.success(
-      'Se registro correctamente la tarjeta',
-      'Tarjeta Registrada'
+    this._tarjetaService.saveTarjeta(tarjeta).subscribe(
+      (data) => {
+        this.toastr.success(
+          'Se registro correctamente la tarjeta',
+          'Tarjeta Registrada'
+        );
+        this.obtenerTarjetas();
+        this.form.reset();
+      },
+      (error) => {
+        this.toastr.error('Error al registrar la tarjeta', 'Error');
+        console.log(error);
+      }
     );
 
     // Reseteo el formulario
