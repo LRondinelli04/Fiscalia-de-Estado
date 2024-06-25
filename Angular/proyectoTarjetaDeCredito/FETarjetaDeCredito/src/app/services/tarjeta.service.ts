@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class TarjetaService {
   // Variables
-  private myAppUrl = 'https://localhost:7184/';
+  private myAppUrl = 'http://localhost:5231/';
   private myApiUrl = 'api/tarjeta/';
 
   constructor(private http: HttpClient) {}
