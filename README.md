@@ -16,5 +16,5 @@ Este repositorio alberga los trabajos realizados durante la pasantía en la *Fis
 ## Estructura del Repositorio
 
 - `Angular/`: Carpeta que contiene los apuntes y material proporcionado para practicar.
-- `proyectoPracticas/`: Carpeta dedicada a los proyectos practicos desarrollados.
 - `ProyectoMEV/`: Carpeta que contiene el proyecto dedicado a la Búsqueda de Causas para la MEV.
+- `ProyectoPracticas/`: Carpeta dedicada a los proyectos practicos desarrollados.
