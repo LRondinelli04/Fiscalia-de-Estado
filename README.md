@@ -7,8 +7,10 @@ Este repositorio alberga los trabajos realizados durante la pasantía en la *Fis
 ## Tecnologías Utilizadas
 
 - **Angular**: Framework utilizado para el desarrollo de aplicaciones web dinámicas.
+    - **HTML y CSS**: Lenguajes de marcado y estilo utilizados para estructurar y diseñar las páginas web.
+    - **TypeScript**: Lenguaje de programación que extiende JavaScript, utilizado para desarrollar aplicaciones web robustas y escalables.  
 - **.NET**: Plataforma utilizada para el desarrollo de aplicaciones y servicios.
-- **C#**: Lenguaje de programación utilizado para el desarrollo de aplicaciones en la plataforma .NET.
+    - **C#**: Lenguaje de programación utilizado para el desarrollo de aplicaciones en la plataforma .NET.
 - **SQL**: Lenguaje de consulta utilizado para la gestión y manipulación de bases de datos. 
 
 ## Estructura del Repositorio
