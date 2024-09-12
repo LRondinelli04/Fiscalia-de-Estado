@@ -1,7 +1,5 @@
 # ProyectoMEV
 
-- En este repositorio se verán los cambios y los códigos que realicé para poder notar el avance y la incorporación de los conocimientos adquiridos a lo largo de este proyecto.
-
 ## Wrapper de Buscador de Causas por ID de Organismo
 
 - Este repositorio contiene el desarrollo de un wrapper que permite a los usuarios, a través de la aplicación miCartera, consultar causas utilizando palabras clave, como datos de persona + algo más (por ejemplo, "lopez juan alimentos"). La búsqueda se realiza en la carátula de la Mesa de Entrada Virtual (MEV), abarcando distintos fueros y juzgados, con el objetivo de identificar causas similares asociadas a determinadas personas.
