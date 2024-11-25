@@ -1,5 +1,7 @@
 # Fiscalía de Estado
-
+<div align="center"> 
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/LRondinelli04/Fiscalia-de-Estado)](https://github.com/LRondinelli04/Fiscalia-de-Estado)
+ </div>
 ## Descripción
 
 Este repositorio alberga los trabajos realizados durante la pasantía en la *Fiscalía de Estado en colaboración con la Facultad de Informática de la UNLP*. Aquí se recopilan las prácticas y proyectos desarrollados, que reflejan la experiencia adquirida en un entorno profesional.
